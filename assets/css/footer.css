@@ -52,18 +52,3 @@ footer{
     color:white;
 } 
 
-.hero-button{
-  margin: 16px;
-  height: 70px;
-  width: 150px;
-  background-color: rgb(24, 21, 21);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  font-family: 'Anton', sans-serif;
-  font-size: 22px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  box-shadow:0 10px 20px rgba(0, 0, 0, 0.637), 0 6px 6px rgba(0, 0, 0, 0.644);
-}
