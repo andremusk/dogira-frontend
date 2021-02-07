@@ -16,6 +16,9 @@ function renderBuyerInfo(){
 }
 
 function renderCommunityInfo(){
+    // let communityButton = document.createElement("button")
+    // communityButton.className = "disclaimer-button"
+    // communityButton.innerHTML = "MUCHSUPPORT"
     let section = document.getElementById("section-swap")
     section.style.flexDirection = 'row-reverse'
     let image = document.getElementById("image-swap")
@@ -25,6 +28,7 @@ function renderCommunityInfo(){
     buyers.style.opacity = ".8"    
     let alternator = document.getElementById("alternator");
     alternator.innerText = 'muchsupport function that awards community members support/shills/etc from .001% to .1% of the dogecity treasury once per day. (dependent on admin approval)'
+    // section.append(communityButton)
 }
 window.addEventListener("DOMContentLoaded",()=>renderBuyerInfo())
 
@@ -70,7 +74,7 @@ function scrollFunction() {
         document.getElementById("about-image").style.borderRadius = "0%";
     }
 }
-let content = document.createElement("p")
+let content = document.getElementById("p-render")
 let button1 = document.getElementById("disclaimer")
 let button2 = document.getElementById("disclosure")
 
