@@ -8,9 +8,11 @@ function renderBuyerInfo(){
     let alternator = document.getElementById("alternator");
     let image = document.getElementById("image-swap")
     image.style.backgroundImage = `url("images/gold.jpg")`
+    image.style.backgroundSize = "cover"
     buyers.style.backgroundColor = "#f09f13"
-    community.style.backgroundColor = "grey"
-    community.style.opacity = .8
+    community.style.backgroundColor = "rgb(28, 27, 27)"
+    alternator.style.borderRadius = "5%"
+    // community.style.opacity = .8
     
     alternator.innerText = 'Each buy has a buy fee that will go into a prize pool, buy fee is calculated by buy weight. More buy = less fee. Much money. Every 10th buy that buyer gets the WHOLE prize pool (adjustable). Every buy gets a buy bonus that is powered by sell fees (5% sell fee), buy AFTER a sell and get more money.'
 }
@@ -24,8 +26,8 @@ function renderCommunityInfo(){
     let image = document.getElementById("image-swap")
     image.style.backgroundImage = `url("images/north.jpg")`
     community.style.backgroundColor = "#f09f13"
-    buyers.style.backgroundColor = "grey"
-    buyers.style.opacity = ".8"    
+    buyers.style.backgroundColor = "rgb(28, 27, 27)"
+    // buyers.style.opacity = ".8"    
     let alternator = document.getElementById("alternator");
     alternator.innerText = 'muchsupport function that awards community members support/shills/etc from .001% to .1% of the dogecity treasury once per day. (dependent on admin approval)'
     // section.append(communityButton)
