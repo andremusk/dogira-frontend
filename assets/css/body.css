@@ -457,11 +457,11 @@ img {vertical-align: middle}
     font-size: 17px;
     background-size: 100% 202%;
     transition: all 0.2s ease;
-    animation: down-jump 0.4s ease;
+    /* animation: down-jump 0.4s ease; */
     animation: down-bump 0.4s ease;
     line-height: 25px;
     text-align: center;
-
+    font-weight: 800;
 }
 .feature:hover{
     cursor:pointer;
@@ -475,7 +475,6 @@ img {vertical-align: middle}
     background-position: center;
     background-position: 100% 100%;
     animation: up-bump 0.4s ease;
-    animation: up-jump 0.4s ease;
     color: transparent;
 }
 
@@ -504,12 +503,6 @@ img {vertical-align: middle}
   0% { padding-top: 1em; }
   50% { padding-top: 1.2em; }
   100% { padding-top: 1em; }
-}
-
-@keyframes up-jump {
-  0% { margin-top: 1em; }
-  50% { margin-top: 1.2em; }
-  100% { margin-top: 1em; }
 }
 @keyframes down-jump {
   0% { margin-top: 1em; }
