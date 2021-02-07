@@ -9,7 +9,7 @@ function renderBuyerInfo(){
     let image = document.getElementById("image-swap")
     image.style.backgroundImage = `url("images/gold.jpg")`
     image.style.backgroundSize = "cover"
-    buyers.style.backgroundColor = "#f09f13"
+    buyers.style.backgroundColor = "#115C5B"
     community.style.backgroundColor = "rgb(28, 27, 27)"
     alternator.style.borderRadius = "5%"
     // community.style.opacity = .8
@@ -25,7 +25,7 @@ function renderCommunityInfo(){
     section.style.flexDirection = 'row-reverse'
     let image = document.getElementById("image-swap")
     image.style.backgroundImage = `url("images/north.jpg")`
-    community.style.backgroundColor = "#f09f13"
+    community.style.backgroundColor = "#115C5B"
     buyers.style.backgroundColor = "rgb(28, 27, 27)"
     // buyers.style.opacity = ".8"    
     let alternator = document.getElementById("alternator");
