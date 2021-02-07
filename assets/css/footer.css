@@ -36,7 +36,19 @@ footer{
   }
 }
 
+.contact > p{
+    font-size: .6em;
+    /* font-size: 15px; */
+    color:white;
+} 
+
 .disclaimer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.disclaimer-content{
     width: 95vw;
     height: fit-content;
     padding: 25px;
@@ -46,9 +58,19 @@ footer{
     text-align: center;
 } 
 
-.contact > p{
-    font-size: .6em;
-    /* font-size: 15px; */
-    color:white;
-} 
 
+.disclaimer-button{
+  margin: 30px;
+  height: 70px;
+  width: 250px;
+  background-color: rgb(24, 21, 21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-family: 'Anton', sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow:0 10px 20px rgba(0, 0, 0, 0.637), 0 6px 6px rgba(0, 0, 0, 0.644);
+}
