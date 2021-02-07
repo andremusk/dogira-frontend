@@ -247,6 +247,11 @@ body{
   box-shadow:0 10px 20px rgba(0, 0, 0, 0.637), 0 6px 6px rgba(0, 0, 0, 0.644);
 }
 
+.hero-button:hover{
+  background-color: #f09f13;
+  color: rgb(24, 21, 21);
+}
+
 @media only screen and (max-width: 375px) {
   .hero-button{
     font-size: 19px;
