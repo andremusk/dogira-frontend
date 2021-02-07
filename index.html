@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/resetcss.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/body.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- font-family: 'Nunito', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Noto Sans JP', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Barlow', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Dosis', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Dosis&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Fjalla One', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Permanent Marker', cursive; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Luckiest Guy', cursive;        -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Anton', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">  
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+    <title>DOGIRA</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div id="stickyHeader" class="header-links-wrapper">
+        <div class="links">
+            <a href="#home" class="header-links">HOME</a>
+            <a href="#about" class="header-links">ABOUT</a>
+            <a href="#mechanics" class="header-links">MECHANICS</a>
+            <a href="#global-functions" class="header-links">GLOBAL</a>
+            <a href="#tokenomics" class="header-links">TOKENOMICS</a>
+        </div>
+        <!-- <div class="logo">Logo</div> -->
+    </div>
+    <!-- HERO-BANNER -->
+    <div id="home" class="hero-wrapper">
+        <div class="hero-banner">
+            <img src="/images/hero.png" alt="" class="hero-image">
+        </div>
+        <div class="hero-text">
+            <div class="roledex-container">
+                <div class="roledex">
+                    <h1 class="static-word">KING OF</h1>
+                    <div class="rotating-words-wrapper">
+                        <div class="rotating-words">
+                            <h1 class="changing-word">GAINS</h1>
+                            <h1 class="changing-word">MEMES</h1>
+                            <h1 class="changing-word">DOGES</h1>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about" class="about-wrapper">
+        <h1 class='title title2'>ABOUT</h1>
+        <div class="about-section">
+            <div class="about-text">
+                <p>The true KING is coming. Dogira will obliterate all that stands in its path. Bye bye paper hands. Very destruction.
+                No 50% coins to vitalik, no coins to Andre Cronje, no coins to elon musk. Coins only to you and
+                dogira.</p>
+            </div>
+            <div id="about-image" class="about-image">
+                
+            </div>
+        </div>
+    </div>
+    <!-- MECHANICS -->
+    <div class="mechanics-wrapper" id="mechanics">
+        <h1 class='title'>MECHANICS</h1>
+    
+        <div class="button-toggle">
+            <button onclick="renderBuyerInfo()" class="button-switches" id="buyers">BUYERS</button>
+            <button onclick="renderCommunityInfo()" class="button-switches" id="community">COMMUNITY</button>
+        </div>
+        <div id="section-swap" class="mechanics-section">
+            <div id="image-swap" class="mechanics-image">
+            </div>
+            <div class="mechanics-text">
+                <p id="alternator">
+                Each buy has a buy fee that will go into a prize pool, buy fee is calculated by buy weight. More buy = less fee. Much money.
+                Every 10th buy that buyer gets the WHOLE prize pool (adjustable).
+                Every buy gets a buy bonus that is powered by sell fees (5% sell fee), buy AFTER a sell and get more money.</p>           
+            </div>
+        </div>
+        <div>
+            <div class='mechanics-foot'>*Each txn has a 1% tx fee that is split across all holders and 1% doge fee for dogecity</div>
+        </div>
+    </div>
+    <!-- GLOBAL FUNCTIONS -->
+    <div id="global-functions" class="global-functions-wrapper">
+        <h1 class="title title2">GLOBAL FUNCTIONS</h1>
+        <div class="global-functions-section">
+            <!-- <div class="global-functions-image" > -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="/images/sfdoge.jpg" style="width:100%">
+                        <div class="text">Every 10 minutes anyone can call only 1 of two functions<br/>
+                        verysmashed = burn on the token supply (2%)><br/>
+                        dogebreathe = positive rebase (2%)<br/></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="/images/sfdoge.jpg" style="width:100%">
+                        <div class="text">
+                        Every 1 hour you can call a dogeit function where you can bet up to 5% of the buybonus pool<br/>
+                        If you lose you put the amount into the pool<br/>
+                        If you win you get 5% of the pool<br/></div>
+                    
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="/images/sfdoge.jpg" style="width:100%">
+                        <div class="text">
+                        wow function that disperses amount you put to holders<br/>
+                        (in case contracts want to use it, will be used in case presale doesn’t sell all)<br/></div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br/>
+            <div style="text-align:center" class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+                
+        </div>
+
+    </div>
+    <!-- TOKENOMICS -->
+    <div id="tokenomics" class="tokenomics-wrapper">
+        <h1 class="title">TOKENOMICS</h1>
+        <div class="tokenomics-section">
+            <div class="feature">
+                DOGIRAs <br>              
+                100 million tokens
+            </div>
+            <div class="feature">
+                Presale<br> 
+                40% of supply<br> 
+                unsold supply <br> dispersed <br> among holders
+            </div>
+            <div class="feature">
+                Public Sale<br> 
+                30%
+            </div>
+            <div class="feature">
+                Marketing<br> 
+                10%
+            </div>
+            <div class="feature">
+                Farm/Pool<br>
+                10% of supply <br> (DOGEY KONG)
+            </div>
+            <div class="feature">
+                Development <br>&<br> Audits
+                5%
+            </div>
+            <div class="feature">
+                Community/<br>
+                Admins 5%
+            </div>
+            <div class="feature">
+                Team<br>
+                5%
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/js-functions.js"></script>
+    </body>
+    <footer>
+        <div class="disclaimer">
+            <p>**DOGIRA can also distinguish between buys and withdraws to the liquidity pool to prevent abuse of the prize pool (ie. you
+            can’t cheat by simply withdrawing liquidity to mimic a buy transaction). More details will be released as the website
+            comes together, as well as the presale details.</p>
+        </div>
+        <!-- <div class="contact">
+            <p>Telegram: https://t.me/dogiratoken</p>
+            <p>Presale: TBD</p>
+        </div> -->
+    </footer>
+</html>

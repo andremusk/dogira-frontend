@@ -1,0 +1,526 @@
+/* ABOUT SECTION */
+.about-wrapper{
+    /* margin-top: 50px; */
+    display:flex;
+    /* justify-content:center; */
+    flex-direction:column;
+    align-items:center;
+    height: 97vh;
+}
+.about-section{
+    height: 55vh;
+    /* margin:20px; */
+    width:70vw;
+    display:flex;
+    flex-direction:row;
+    /* justify-content: space-between; */
+}
+.about-text{
+    display:flex;
+    width: 50%;
+    margin-right: 60px;
+}
+
+.about-text > p{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    /* margin: 50px; */
+    font-size: 35px;
+    font-family: 'Barlow', sans-serif;
+    line-height: 50px;
+}
+
+@media only screen and (max-width: 375px) {
+
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .about-text > p{
+      font-size: 20px;
+      line-height: 29px;
+    }
+}
+
+.about-image{
+    /* border-radius: 50%; */
+	transition: 1s;
+    display:flex;
+    height:100%;
+    width:50%;
+    background-image: url("/images/dogemoney.jpg");
+    /* transform: scale(0.5); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (max-width: 375px) {
+
+    .about-image{
+        height: 100%;
+        width: 60%;
+        margin-top: 50px;
+        /* background-size: contain; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: scale(1.6);
+    }
+}
+
+
+/* MECHANICS SECTION */
+.mechanics-wrapper{
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url("/images/blockchain1.jpg"); */
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.mechanics-section{
+    width: 70vw;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding:50px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,30%);
+    border-radius:10px;
+}
+
+@media only screen and  (max-width: 375px) { 
+	.mechanics-section {
+    width: 95vw;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 30%);
+    border-radius: 10px;
+}
+}
+
+.title{
+    color: black;
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+    margin: 75px 0px 50px 0px;
+    text-shadow: 5px 5px 0px rgb(240, 159, 19);
+}
+
+.title2{
+    color:rgb(240, 159, 19);
+    text-shadow: 5px 5px 0px black;
+}
+
+@media only screen and (max-width: 375px) {
+    .title2{
+        text-align: center;
+    }    
+}
+
+
+
+.title3{
+    color: white;
+    text-shadow: 5px 5px 0px rgb(240, 159, 19);
+    
+}
+
+
+.mechanics-image{
+    margin: 10px;
+    background-image: url("/images/gold.jpg");
+    background-size: contain;
+    width:50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and  (max-width: 375px) { 
+	.mechanics-image {
+    /* margin: 10px; */
+    background-image: url(/images/gold.jpg);
+    background-size: contain;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:none;
+    /* height: 99px; */
+}
+
+}
+
+.mechanics-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and  (max-width: 375px) { 
+	.mechanics-text {
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+}
+}
+
+
+.mechanics-text > p{
+    color: black;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    margin: 60px;
+    font-size: 22px;
+    font-family: 'Barlow', sans-serif;
+    line-height: 30px;
+}
+
+@media only screen and  (max-width: 375px) { 
+	.mechanics-text > p {
+    color: black;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    /* margin: 60px; */
+    font-size: 22px;
+    font-family: 'Barlow', sans-serif;
+    line-height: 35px;
+    width:100%;
+}
+}
+
+.button-toggle{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+
+@media only screen and (max-width: 375px) {
+    .button-toggle{
+        width:100%;
+        margin:5px;
+    }
+}
+
+
+.mechanics-foot{
+    margin: 50px;
+    color: black;
+    font-family: 'Barlow', sans-serif;
+}
+.button-switches{
+    width: 300px;
+    height: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-bottom:20px;
+    border-radius:4px;
+    border:none;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-size: 29px;
+}
+
+@media only screen and (max-width: 375px) {
+    .button-switches{
+        width:100%;
+        margin:5px;
+    }
+}
+
+
+/* GLOBAL FUNCTIONS - CAROUSEL*/
+
+.global-functions-wrapper{
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.global-functions-section{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    
+}
+
+.subtitle-global{
+    font-size: 25px;
+    color:white;
+    display:flex;
+}
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+    font-family: 'Barlow', sans-serif;
+    background: #000; 
+	position: relative;
+	border-top: 3px solid #888; 
+	padding: 2% 2% 4% 2%; 
+	border-radius: 10px; 
+	border-bottom-left-radius: 50% 2%; 
+	border-bottom-right-radius: 50% 2%; 
+    transition: margin-right 1s;
+    animation: tvflicker 3s linear infinite;
+    margin-bottom:5px;
+}
+
+@media only screen and (max-width: 375px) {
+    .slideshow-container{
+        height: 300px;
+        overflow: hidden;
+        animation: none;
+    }
+    
+
+    .mySlides > img{
+        transform: scale(1.4);
+        margin-top: 50px;
+    }
+}
+
+
+.slideshow-container:after{
+    
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 3%;
+	left: 36%;
+	height: .5%; 
+	width: 28%;
+	background: #ddd; 
+	border-radius: 50%; 
+	box-shadow: 0 0 3px 0 white; 
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    /* transition: 0.6s ease; */
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin-right:30px
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(245, 245, 245, 0.164);
+    width: 50px; 
+    border-radius: 50%;
+}
+
+/* Caption text */
+.text {
+    font-family: 'Barlow', sans-serif;
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 65px;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* TOKENOMICS */
+
+.tokenomics-wrapper{
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 159, 19);
+    padding-bottom: 100px;
+}
+
+
+.tokenomics-section{
+    width: 70vw;
+   
+    display: grid;
+    grid-template-rows: repeat(2,240px);
+    grid-template-columns: repeat(4,240px);
+    align-content: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 375px) {
+    .tokenomics-section{
+    width: 70vw;
+    display: grid;
+    grid-template-rows: repeat(2,200px);
+    grid-template-columns: repeat(2,185px);
+    align-content: center;
+    justify-content: center;
+    }
+}
+.feature{
+    width: 198px;
+    height: 198px;
+    margin: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    background-color: black;
+    border-radius: 50%;  
+    font-size: 17px;
+    background-size: 100% 202%;
+    transition: all 0.2s ease;
+    animation: down-jump 0.4s ease;
+    animation: down-bump 0.4s ease;
+    line-height: 25px;
+    text-align: center;
+
+}
+.feature:hover{
+    cursor:pointer;
+    /* border: 18px solid rgba(107, 79, 0, 0.548); */
+    /* border: 18px solid black; */
+    /* background-color: rgba(212, 175, 55); */
+    /* background-color:  rgb(240, 159, 19); */
+    transform:scale(1.2);
+    background-image: url("/images/dogecoin.png");
+    background-size: cover;
+    background-position: center;
+    background-position: 100% 100%;
+    animation: up-bump 0.4s ease;
+    animation: up-jump 0.4s ease;
+    color: transparent;
+}
+
+@media only screen and (max-width: 375px) {
+    .feature{
+        margin:2px;
+        height:180px;
+        width:180px;
+        transform:scale(.8)
+    }
+
+    .feature:hover{
+        transform:scale(0.9);
+        color: transparent;
+    }
+}
+
+
+
+@keyframes up-bump {
+  0% { padding-top: 1em; }
+  50% { padding-top: 1.2em; }
+  100% { padding-top: 1em; }
+}
+@keyframes down-bump {
+  0% { padding-top: 1em; }
+  50% { padding-top: 1.2em; }
+  100% { padding-top: 1em; }
+}
+
+@keyframes up-jump {
+  0% { margin-top: 1em; }
+  50% { margin-top: 1.2em; }
+  100% { margin-top: 1em; }
+}
+@keyframes down-jump {
+  0% { margin-top: 1em; }
+  50% { margin-top: 1.2em; }
+  100% { margin-top: 1em; }
+}
+@keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+}
+
+.dot-container{
+    margin:20px;
+}

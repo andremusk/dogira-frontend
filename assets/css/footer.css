@@ -1,0 +1,53 @@
+footer{
+    /* margin-top: 100px; */
+    padding-top: 30px;
+    height: 35vh;
+    background-image: url("/images/apocalypticfuture.jpg");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-color: rgb(240, 159, 19);;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+    align-items: center;
+}
+
+@media only screen and (max-width: 375px) {
+  footer{
+ 
+   padding-top: 30px;
+ height: 44%;
+   background-image: url(/images/apocalypticfuture.jpg);
+   background-repeat: no-repeat;
+   /* background-position: center; */
+   background-attachment: fixed;
+   background-position: bottom;
+   background-color: rgb(240, 159, 19);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   font-family: 'Barlow', sans-serif;
+   font-size: 30px;
+   align-items: center;
+  }
+}
+
+.disclaimer{
+    width: 95vw;
+    height: fit-content;
+    padding: 25px;
+    /* background: black; */
+    line-height: 40px;
+    font-size: .6em;
+    text-align: center;
+} 
+
+.contact > p{
+    font-size: .6em;
+    /* font-size: 15px; */
+    color:white;
+} 

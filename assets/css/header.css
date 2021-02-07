@@ -1,0 +1,212 @@
+:root{
+    --main-red: #8A0303;
+    --main-font: 'Anton', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+  background-color: rgb(28, 27, 27);
+}
+
+.hero-banner{
+  margin-top: 150px;
+}
+
+.header-links-wrapper{
+    width: 100vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 70px;
+    background-color:black;
+    align-items:center;
+    letter-spacing: 2px;
+    z-index:1;
+}
+
+.header-links{
+    margin:0px;
+    font-family: var(--main-font);
+    color: white;
+    cursor:pointer;
+    text-decoration: none;
+
+}
+.header-links:hover{
+    color:#f09f13
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    
+}
+
+@media only screen and  (max-width: 375px) { 
+	.links{
+		    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 14px;
+	}
+}
+
+.hero-wrapper{
+    width: 100vw;
+    height:98vh;
+    /* height:900px; */
+    /* update height */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    /* border: 5px solid black; */
+    flex-direction:column;
+    background-image: url("/images/apocalypticfuture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  
+    /* background:linear-gradient(transparent,rgb(54, 1, 1),rgb(82, 2, 2), rgb(148, 4, 4), rgb(163, 42, 5), rgb(240, 159, 19)) */
+}
+
+@media only screen and (max-width: 375px) {
+    .hero-wrapper{
+      height:70vh;
+    }
+}
+
+
+
+.hero-image{
+    height:300px;
+    width: 300px;
+}
+
+@media only screen and (max-width: 375px) {
+  .hero-image{
+    height: 150px;
+    width:150px
+  }
+}
+
+.rotating-words-wrapper{
+    overflow: hidden;
+    height: 110px;
+}
+
+.roledex-container{
+    /* border: 3px solid teal; */
+    margin-top: 40px;
+    font-family: 'Anton', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    font-size:95px;
+    text-shadow: 10px 20px 0px black;
+}
+
+@media only screen and (max-width: 375px) {
+  .roledex-container{
+    margin-top: 40px;
+    font-family: 'Anton', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    font-size: 50px;
+    text-shadow: 10px 20px 0px black;
+  }
+}
+
+.roledex{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.static-word{
+    margin-right: 10px;
+
+}
+
+.rotating-words{
+    line-height: 160px;
+    transform: translateY(-225px);
+    
+    animation: word-spin 10s linear infinite ;
+}
+.changing-word{
+  color: rgb(240, 159, 19);
+}
+
+@keyframes word-spin{
+    0% {
+    opacity: 0;
+    transform: translateY(-348px)
+  }
+  20%{
+    opacity: 1;
+    transform: translateY(-348px)
+  }
+  
+  25% {
+    opacity: 1;
+    transform: translateY(-348px);
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(-348px);
+  }
+ 
+   40% {
+    opacity: 0;
+    
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-185px);
+  }
+  65% {
+    opacity: 1;
+    transform: translateY(-185px);
+  }
+  
+   73% {
+    opacity: 0;
+    
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-25px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(-25px);
+  }
+  95% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  99% {
+    opacity: 0;
+    transform: translateY(348px);
+  }
+  
+   100% {
+    opacity: 0;
+    transform: translateY(558px);
+  }
+}
+
+#stickyHeader{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+
