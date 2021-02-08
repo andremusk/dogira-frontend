@@ -193,7 +193,7 @@
     flex-direction: center;
     align-items: center;
     margin: 60px;
-    font-size: 22px;
+    font-size: 30px;
     font-family: 'Barlow', sans-serif;
     line-height: 30px;
 }
@@ -222,15 +222,34 @@
     .button-toggle{
         width:100%;
         margin:5px;
+        justify-content: center;
     }
 }
 
+.mechanics-bottom{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.disclaimer-button .mechanics-button{
+    width: 50%;
+    margin: 50px 0px 0px 0px;
+    color: black;
+}
 
 .mechanics-foot{
-    margin: 50px;
-    color: white;
-    font-family: 'Barlow', sans-serif;
+    color: black;
+    margin: 0px 0px 20px 0px;
 }
+
+@media only screen and (max-width: 375px) {
+    .mechanics-foot{
+        width: 90vw;
+        font-family: 'Barlow', sans-serif;
+    }
+}
+
 .button-switches{
   /* margin-bottom: 10px; */
   height: 50px;
@@ -252,8 +271,8 @@
 
 @media only screen and (max-width: 375px) {
     .button-switches{
-        width:100%;
-        margin:5px;
+        width: 40%;
+        /* margin:5px; */
     }
 }
 
