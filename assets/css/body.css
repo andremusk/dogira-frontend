@@ -498,7 +498,7 @@ img {vertical-align: middle}
     font-weight: 800;
 }
 .feature:hover{
-    cursor:pointer;
+    /* cursor:pointer; */
     /* border: 18px solid rgba(107, 79, 0, 0.548); */
     /* border: 18px solid black; */
     /* background-color: rgba(212, 175, 55); */
