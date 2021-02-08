@@ -127,12 +127,12 @@
     font-size: 60px;
     font-family: 'Anton', sans-serif;
     margin: 75px 0px 50px 0px;
-    text-shadow: 8px 8px 0px rgb(240, 159, 19);
+    text-shadow: 3px 3px 4px rgb(240, 159, 19);
 }
 
 .title2{
     color:rgb(240, 159, 19);
-    text-shadow: 8px 8px 0px black;
+    text-shadow: 8px 8px 4px black;
 }
 
 @media only screen and (max-width: 375px) {
@@ -145,7 +145,7 @@
 
 .title3{
     color: white;
-    text-shadow: 9px 9px 0px rgb(240, 159, 19);
+    text-shadow: 8px 8px 4px rgb(240, 159, 19);
     
 }
 
