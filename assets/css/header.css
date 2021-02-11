@@ -47,6 +47,8 @@ body{
     
 }
 
+
+
 @media only screen and  (max-width: 375px) { 
 	.links{
 		    display: flex;
@@ -54,6 +56,12 @@ body{
     width: 100%;
     font-size: 14px;
 	}
+}
+
+@media only screen and  (min-width: 376px) { 
+  .header-links-wrapper{
+    width: 100vw;
+  }
 }
 
 .hero-button-wrapper > a{
@@ -99,6 +107,13 @@ body{
   }
 }
 
+@media only screen and (max-height: 715px) {
+  .hero-image{
+    height: 200px;
+    width: 200px
+  }
+}
+
 .rotating-words-wrapper{
     overflow: hidden;
     height: 110px;
@@ -115,6 +130,17 @@ body{
 }
 
 @media only screen and (max-width: 375px) {
+  .roledex-container{
+    margin-top: 40px;
+    font-family: 'Anton', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    font-size: 50px;
+    text-shadow: 10px 20px 0px black;
+  }
+}
+
+@media only screen and (max-height: 715px) {
   .roledex-container{
     margin-top: 40px;
     font-family: 'Anton', sans-serif;
