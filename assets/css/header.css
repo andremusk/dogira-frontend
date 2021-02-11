@@ -28,6 +28,21 @@ body{
     z-index:1;
 }
 
+
+@media only screen and  (min-width: 376px) { 
+  .header-links-wrapper{
+    width: 100vw;
+  }
+}
+
+@media only screen and  (min-width: 720x) { 
+  .header-links-wrapper{
+    width: 100vw;
+  }
+}
+
+
+
 .header-links{
     margin:0px;
     font-family: var(--main-font);
@@ -48,20 +63,33 @@ body{
 }
 
 
-
 @media only screen and  (max-width: 375px) { 
 	.links{
-		    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    font-size: 14px;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100vw;
+      font-size: 14px;
 	}
 }
 
-@media only screen and  (min-width: 376px) { 
-  .header-links-wrapper{
-    width: 100vw;
-  }
+
+@media only screen and  (max-width: 720px) { 
+	.links{
+      display: flex;
+      justify-content: space-between;
+      width: 80vw;
+      font-size: 14px;
+	}
+}
+
+
+@media only screen and  (max-width: 425px) { 
+	.links{
+      display: flex;
+      justify-content: space-evenly;
+      width: 100vw;
+      font-size: 12px;
+	}
 }
 
 .hero-button-wrapper > a{
@@ -73,7 +101,8 @@ body{
     height:98vh;
     /* height:900px; */
     /* update height */
-    display:flex;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items:center;
     /* border: 5px solid black; */
@@ -107,6 +136,13 @@ body{
   }
 }
 
+@media only screen and (max-width: 643px) {
+  .hero-image{
+    height: 200px;
+    width: 200px
+  }
+}
+
 @media only screen and (max-height: 715px) {
   .hero-image{
     height: 200px;
@@ -130,6 +166,30 @@ body{
 }
 
 @media only screen and (max-width: 375px) {
+  .roledex-container{
+    margin-top: 40px;
+    font-family: 'Anton', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    font-size: 50px;
+    text-shadow: 10px 20px 0px black;
+  }
+}
+
+
+@media only screen and (max-width: 643px) {
+  .roledex-container{
+    margin-top: 40px;
+    font-family: 'Anton', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    font-size: 65px;
+    text-shadow: 10px 20px 0px black;
+  }
+}
+
+
+@media only screen and (max-width: 455px) {
   .roledex-container{
     margin-top: 40px;
     font-family: 'Anton', sans-serif;
@@ -252,6 +312,12 @@ body{
 }
 
 @media only screen and (max-width: 375px) {
+  .hero-button-wrapper{
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 625px) {
   .hero-button-wrapper{
     flex-wrap: wrap;
   }

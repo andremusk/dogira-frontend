@@ -3,10 +3,20 @@ let community = document.getElementById("community")
 
 
 function renderBuyerInfo(){
-    let section = document.getElementById("section-swap")
-    section.style.flexDirection = 'row'
-    let alternator = document.getElementById("alternator");
     let image = document.getElementById("image-swap")
+    let section = document.getElementById("section-swap")
+    let alternator = document.getElementById("alternator");
+    if (window.innerWidth < 625) {
+        section.style.flexDirection = 'column-reverse'
+        image.style.height = '300px'
+        image.style.width = '90%'
+    } else{
+        section.style.flexDirection = 'row'
+        image.style.width = '50%'
+    }
+    // if (window.innerHeight < ){
+
+    // }
     image.style.backgroundImage = `url("images/gold.jpg")`
     image.style.backgroundSize = "cover"
     buyers.style.backgroundColor = "#115C5B"
@@ -22,13 +32,21 @@ function renderCommunityInfo(){
     // communityButton.className = "disclaimer-button"
     // communityButton.innerHTML = "MUCHSUPPORT"
     let section = document.getElementById("section-swap")
-    section.style.flexDirection = 'row-reverse'
     let image = document.getElementById("image-swap")
+    let alternator = document.getElementById("alternator");
+    if (window.innerWidth < 625) {
+        section.style.flexDirection = 'column-reverse'
+        image.style.height = '300px'
+        image.style.width = '90%'
+    } else {
+        section.style.flexDirection = 'row-reverse'
+        image.style.width = '50%'
+    }
+    // section.style.flexDirection = 'row-reverse'
     image.style.backgroundImage = `url("images/north.jpg")`
     community.style.backgroundColor = "#115C5B"
     buyers.style.backgroundColor = "rgb(28, 27, 27)"
     // buyers.style.opacity = ".8"    
-    let alternator = document.getElementById("alternator");
     alternator.innerText = 'muchsupport function that awards community members support/shills/etc from .001% to .1% of the dogecity treasury once per day. (dependent on admin approval)'
     // section.append(communityButton)
 }
