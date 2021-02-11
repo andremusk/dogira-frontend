@@ -105,7 +105,8 @@ body{
 
 .hero-wrapper{
     width: 100vw;
-    height:98vh;
+    padding-bottom: 100px;
+    height:fit-content;
     /* height:900px; */
     /* update height */
     display: flex;
@@ -122,6 +123,14 @@ body{
   
     /* background:linear-gradient(transparent,rgb(54, 1, 1),rgb(82, 2, 2), rgb(148, 4, 4), rgb(163, 42, 5), rgb(240, 159, 19)) */
 }
+
+@media only screen and (min-height: 689px) {
+    .hero-wrapper{
+      height: 98vh;
+      padding-bottom: 0px;
+    }
+}
+
 
 @media only screen and (max-width: 375px) {
     .hero-wrapper{

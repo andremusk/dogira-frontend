@@ -11,7 +11,7 @@
 @media only screen and (max-height: 796px) {
     .about-wrapper{
         height: fit-content;
-        padding-bottom: 80px;
+        padding-bottom: 100px;
     }
 }
 
@@ -60,24 +60,7 @@
     }
 }
 
-@media only screen and (max-width: 375px) {
 
-    .about-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-text{
-        width: 100%;
-        margin-right: 0px;
-    }
-
-    .about-text > p{
-      font-size: 20px;
-      line-height: 29px;
-    }
-}
 
 .about-image{
     /* border-radius: 50%; */
@@ -92,6 +75,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@media only screen and (max-height: 800px) {
+
+    .about-image{
+        transform: scale(0.8);
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -122,12 +112,7 @@
     }
 }
 
-@media only screen and (max-height: 800px) {
 
-    .about-image{
-        visibility: hidden;
-    }
-}
 
 /* MECHANICS SECTION */
 .mechanics-wrapper{
