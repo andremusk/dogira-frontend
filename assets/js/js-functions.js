@@ -14,8 +14,8 @@ function renderBuyerInfo(){
         section.style.flexDirection = 'row'
         image.style.width = '50%'
     }
-    // if (window.innerHeight < ){
-
+    // if (window.innerWidth < 625 && window.innerHeight < 800){
+    //     image.style.display = "hidden"
     // }
     image.style.backgroundImage = `url("images/gold.jpg")`
     image.style.backgroundSize = "cover"

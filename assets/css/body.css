@@ -11,6 +11,7 @@
 @media only screen and (max-height: 796px) {
     .about-wrapper{
         height: fit-content;
+        padding-bottom: 80px;
     }
 }
 
@@ -38,24 +39,7 @@
     line-height: 50px;
 }
 
-@media only screen and (max-width: 375px) {
 
-    .about-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-text{
-        width: 100%;
-        margin-right: 0px;
-    }
-
-    .about-text > p{
-      font-size: 20px;
-      line-height: 29px;
-    }
-}
 
 @media only screen and (max-width: 1129px) {
 
@@ -73,6 +57,25 @@
     .about-text > p{
       font-size: 20px;
       line-height: 35px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .about-text > p{
+      font-size: 20px;
+      line-height: 29px;
     }
 }
 
@@ -153,10 +156,24 @@
 
 
 
-@media only screen and  (max-width: 375px) { 
+
+
+@media only screen and  (max-width: 943px) { 
 	.mechanics-section {
-        width: 95vw;
+        width: 80vw;
         min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 30%);
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+@media only screen and  (max-height: 715px) { 
+	.mechanics-section {
+        width: 80vw;
+        min-height: 400px;
         display: flex;
         flex-direction: column;
         padding: 50px;
@@ -176,22 +193,10 @@
     }
 }
 
-@media only screen and  (max-height: 715px) { 
-	.mechanics-section {
-        width: 80vw;
-        min-height: 400px;
-        display: flex;
-        flex-direction: column;
-        padding: 50px;
-        box-shadow: 0px 0px 4px rgb(0 0 0 / 30%);
-        border-radius: 0px 0px 10px 10px;
-    }
-}
 
-
-@media only screen and  (max-width: 943px) { 
+@media only screen and  (max-width: 375px) { 
 	.mechanics-section {
-        width: 80vw;
+        width: 90vw;
         min-height: 500px;
         display: flex;
         flex-direction: column;
@@ -200,6 +205,9 @@
         border-radius: 0px 0px 10px 10px;
     }
 }
+
+
+
 
 
 .mechanics-bottom > a {
@@ -387,21 +395,22 @@
 }
 
 
+
+@media only screen and  (max-width: 943px) { 
+    .button-toggle{
+        width: 80vw;
+        justify-content: center;
+    }
+}
+
 @media only screen and (max-width: 375px) {
     .button-toggle{
-        width:100%;
+        width:90vw;
         margin:5px;
         justify-content: center;
     }
 }
 
-
-@media only screen and  (max-width: 943px) { 
-	 .button-toggle{
-        width: 80vw;
-        justify-content: center;
-    }
-}
 
 
 .mechanics-bottom{
@@ -489,6 +498,16 @@
     
 }
 
+@media only screen and (max-width: 360){
+    .global-functions-section{
+        width: 100vw;
+        display:flex;
+        justify-content: center;
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
 .subtitle-global{
     font-size: 25px;
     color:white;
@@ -518,19 +537,6 @@ img {vertical-align: middle}
     margin-bottom:5px;
 }
 
-@media only screen and (max-width: 375px) {
-    .slideshow-container{
-        height: 300px;
-        overflow: hidden;
-        animation: none;
-    }
-    
-
-    .mySlides > img{
-        transform: scale(1.4);
-        margin-top: 50px;
-    }
-}
 
 @media only screen and (max-width: 943px) {
     .slideshow-container{
@@ -546,6 +552,22 @@ img {vertical-align: middle}
         margin-top: 50px;
     }
 }
+
+@media only screen and (max-width: 375px) {
+    .slideshow-container{
+        max-width: 90vw;
+        height: 300px;
+        overflow: hidden;
+        animation: none;
+    }
+    
+
+    .mySlides > img{
+        transform: scale(1.4);
+        margin-top: 50px;
+    }
+}
+
 
 
 .slideshow-container:after{

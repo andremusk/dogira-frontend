@@ -16,6 +16,13 @@ body{
   margin-top: 150px;
 }
 
+@media only screen and  (max-height: 684px) { 
+  .header-banner{
+    width: 100vw;
+    margin-top: 50px;
+  }
+}
+
 .header-links-wrapper{
     width: 100vw;
     display:flex;
@@ -118,7 +125,7 @@ body{
 
 @media only screen and (max-width: 375px) {
     .hero-wrapper{
-      height:89vh;
+      height: fit-content;
     }
 }
 
@@ -165,7 +172,11 @@ body{
     text-shadow: 10px 10px 0px black;
 }
 
-@media only screen and (max-width: 375px) {
+
+
+
+
+@media only screen and (max-height: 715px) {
   .roledex-container{
     margin-top: 40px;
     font-family: 'Anton', sans-serif;
@@ -175,7 +186,6 @@ body{
     text-shadow: 10px 20px 0px black;
   }
 }
-
 
 @media only screen and (max-width: 643px) {
   .roledex-container{
@@ -200,7 +210,8 @@ body{
   }
 }
 
-@media only screen and (max-height: 715px) {
+
+@media only screen and (max-width: 375px) {
   .roledex-container{
     margin-top: 40px;
     font-family: 'Anton', sans-serif;
@@ -210,6 +221,18 @@ body{
     text-shadow: 10px 20px 0px black;
   }
 }
+
+@media only screen and (max-width: 360px) {
+  .roledex-container{
+    margin-top: 40px;
+    font-family: 'Anton', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    font-size: 40px;
+    text-shadow: 10px 20px 0px black;
+  }
+}
+
 
 .roledex{
     display: flex;
@@ -340,15 +363,17 @@ body{
   box-shadow:0 10px 20px rgba(0, 0, 0, 0.9), 0 6px 6px rgba(0, 0, 0, 0.9);
 }
 
-.hero-button:hover{
-  background-color: #063a39a1;
-  color: white;
-}
 
 @media only screen and (max-width: 375px) {
   .hero-button{
-    font-size: 19px;
+    font-size: 14px;
     height: 60px;
-    width: 130px;
+    width: 110px;
+    margin-bottom: 30px;
   }
+}
+
+.hero-button:hover{
+  background-color: #063a39a1;
+  color: white;
 }
