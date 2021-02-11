@@ -7,6 +7,14 @@
     align-items:center;
     height: 97vh;
 }
+
+@media only screen and (max-height: 796px) {
+    .about-wrapper{
+        height: fit-content;
+        padding-bottom: 100px;
+    }
+}
+
 .about-section{
     height: 55vh;
     /* margin:20px; */
@@ -31,24 +39,7 @@
     line-height: 50px;
 }
 
-@media only screen and (max-width: 375px) {
 
-    .about-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-text{
-        width: 100%;
-        margin-right: 0px;
-    }
-
-    .about-text > p{
-      font-size: 20px;
-      line-height: 29px;
-    }
-}
 
 @media only screen and (max-width: 1129px) {
 
@@ -69,6 +60,8 @@
     }
 }
 
+
+
 .about-image{
     /* border-radius: 50%; */
 	transition: 1s;
@@ -82,6 +75,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@media only screen and (max-height: 800px) {
+
+    .about-image{
+        transform: scale(0.8);
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -112,6 +112,8 @@
     }
 }
 
+
+
 /* MECHANICS SECTION */
 .mechanics-wrapper{
     height: 97%;
@@ -138,22 +140,12 @@
 }
 
 
+
+
+
 @media only screen and  (max-width: 943px) { 
 	.mechanics-section {
         width: 80vw;
-        min-height: 500px;
-        display: flex;
-        flex-direction: column;
-        padding: 50px;
-        box-shadow: 0px 0px 4px rgb(0 0 0 / 30%);
-        border-radius: 0px 0px 10px 10px;
-    }
-}
-
-
-@media only screen and  (max-width: 375px) { 
-	.mechanics-section {
-        width: 95vw;
         min-height: 500px;
         display: flex;
         flex-direction: column;
@@ -169,12 +161,39 @@
         min-height: 400px;
         display: flex;
         flex-direction: column;
+        padding: 50px;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 30%);
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+@media only screen and  (max-width: 643px) { 
+	.mechanics-section {
+        width: 95vw;
+        min-height: 500px;
+        display: flex;
+        padding: 50px;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 30%);
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+
+@media only screen and  (max-width: 375px) { 
+	.mechanics-section {
+        width: 90vw;
+        min-height: 500px;
+        display: flex;
         flex-direction: column;
         padding: 50px;
         box-shadow: 0px 0px 4px rgb(0 0 0 / 30%);
         border-radius: 0px 0px 10px 10px;
     }
 }
+
+
+
+
 
 .mechanics-bottom > a {
     text-decoration: none;
@@ -199,6 +218,13 @@
     }    
 }
 
+@media only screen and (max-width: 440px) {
+    .title2{
+        text-align: center;
+        font-size: 50px;
+    }    
+}
+
 
 
 .title3{
@@ -219,15 +245,29 @@
 
 @media only screen and  (max-width: 375px) { 
 	.mechanics-image {
-    /* margin: 10px; */
-    background-image: url(/images/gold.jpg);
-    background-size: contain;
-    width: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    display:none;
-    /* height: 99px; */
+        /* margin: 10px; */
+        background-image: url("/images/gold.jpg");
+        background-size: contain;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        display:none;
+        /* height: 99px; */
+    }
+
 }
+
+@media only screen and  (max-width: 643px) { 
+	.mechanics-image {
+        /* margin: 10px; */
+        background-image: url("/images/chaos.jpeg");
+        background-size: contain;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* display:none; */
+        /* height: 99px; */
+    }
 
 }
 
@@ -240,6 +280,17 @@
 }
 
 @media only screen and  (max-width: 375px) { 
+	.mechanics-text {
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+}
+}
+
+@media only screen and  (max-width: 621px) { 
 	.mechanics-text {
     width: 100%;
     /* display: flex; */
@@ -329,21 +380,22 @@
 }
 
 
+
+@media only screen and  (max-width: 943px) { 
+    .button-toggle{
+        width: 80vw;
+        justify-content: center;
+    }
+}
+
 @media only screen and (max-width: 375px) {
     .button-toggle{
-        width:100%;
+        width:90vw;
         margin:5px;
         justify-content: center;
     }
 }
 
-
-@media only screen and  (max-width: 943px) { 
-	 .button-toggle{
-        width: 80vw;
-        justify-content: center;
-    }
-}
 
 
 .mechanics-bottom{
@@ -366,6 +418,13 @@
 @media only screen and (max-width: 375px) {
     .mechanics-foot{
         width: 90vw;
+        font-family: 'Barlow', sans-serif;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mechanics-foot{
+        width: 80vw;
         font-family: 'Barlow', sans-serif;
     }
 }
@@ -424,6 +483,16 @@
     
 }
 
+@media only screen and (max-width: 360){
+    .global-functions-section{
+        width: 100vw;
+        display:flex;
+        justify-content: center;
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
 .subtitle-global{
     font-size: 25px;
     color:white;
@@ -453,19 +522,6 @@ img {vertical-align: middle}
     margin-bottom:5px;
 }
 
-@media only screen and (max-width: 375px) {
-    .slideshow-container{
-        height: 300px;
-        overflow: hidden;
-        animation: none;
-    }
-    
-
-    .mySlides > img{
-        transform: scale(1.4);
-        margin-top: 50px;
-    }
-}
 
 @media only screen and (max-width: 943px) {
     .slideshow-container{
@@ -481,6 +537,22 @@ img {vertical-align: middle}
         margin-top: 50px;
     }
 }
+
+@media only screen and (max-width: 375px) {
+    .slideshow-container{
+        max-width: 90vw;
+        height: 300px;
+        overflow: hidden;
+        animation: none;
+    }
+    
+
+    .mySlides > img{
+        transform: scale(1.4);
+        margin-top: 50px;
+    }
+}
+
 
 
 .slideshow-container:after{

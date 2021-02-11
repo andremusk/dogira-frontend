@@ -35,6 +35,25 @@ footer{
     }
 }
 
+@media only screen and (max-width: 653px) {
+  footer{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    height: fit-content;
+    background-image: url(/images/apocalypticfuture.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-color: rgb(240, 159, 19);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+    align-items: center;
+    }
+}
+
 .contact > p{
     font-size: .6em;
     /* font-size: 15px; */
@@ -53,6 +72,7 @@ footer{
     flex-direction: row;
   }
 }
+
 
 .disclaimer-content{
     width: 95vw;
@@ -90,6 +110,27 @@ footer{
 @media only screen and (max-width: 375px) {
   .disclaimer-button{
     width: 250px;
+    font-size: 14px;
+    /* margin: 10px; */
+    letter-spacing: 1px;
+  }
+}
+
+
+@media only screen and (max-width: 625px) {
+  .disclaimer-button{
+    width: 200px;
+    font-size: 14px;
+    margin: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+
+@media only screen and (max-width: 459px) {
+  .disclaimer-button{
+    width: 150px;
     font-size: 14px;
     /* margin: 10px; */
     letter-spacing: 1px;
